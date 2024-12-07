@@ -156,11 +156,11 @@ public class Scrabble {
 	}
 
 	public static void main(String[] args) {
-		//// Uncomment the test you want to run
-		// testBuildingTheDictionary();  
-		// testScrabbleScore();    
-		// testCreateHands();  
-		// testPlayHands();
+		// Uncomment the test you want to run
+		testBuildingTheDictionary();  
+		testScrabbleScore();    
+		testCreateHands();  
+		testPlayHands();
 		playGame();
 	}
 

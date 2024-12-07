@@ -82,6 +82,11 @@ public class MyString {
      * @return a string consisting of the characters of str, separated by spaces.
      */
     public static String spacedString(String str) {
+
+        if (str.equals("")){
+            return str;
+        }
+        
         String spacedString = "";
 
         for (int i = 0; i < str.length() - 1; i++){

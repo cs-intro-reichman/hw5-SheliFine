@@ -49,6 +49,9 @@ public class Scrabble {
 	// Checks if the given word is in the dictionary.
 	private static boolean isWordInDictionary(String word) {
 		for (int i = 0; i < DICTIONARY.length; i++) {
+			if (DICTIONARY[i] == null){
+				break;
+			}
 			if (DICTIONARY[i].equals(word)){
 				return true;
 			}
@@ -157,10 +160,10 @@ public class Scrabble {
 
 	public static void main(String[] args) {
 		// Uncomment the test you want to run
-		testBuildingTheDictionary();  
-		testScrabbleScore();    
-		testCreateHands();  
-		testPlayHands();
+		// testBuildingTheDictionary();  
+		// testScrabbleScore();    
+		// testCreateHands();  
+		// testPlayHands();
 		playGame();
 	}
 

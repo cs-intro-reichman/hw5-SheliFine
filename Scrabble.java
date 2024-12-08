@@ -65,6 +65,12 @@ public class Scrabble {
 	public static int wordScore(String word) {
 		int wordScore = 0; 
 
+		for (int i = 0; i < word.length(); i++){
+			wordScore += SCRABBLE_LETTER_VALUES[(int) (word.charAt(i)) - 97];
+		}
+
+		wordScore *= word.length();
+
 		if (word.length() == 10){
 			wordScore += 50;
 		}
@@ -75,10 +81,6 @@ public class Scrabble {
 			MyString.countChar(word, 'i') > 0){
 				wordScore += 1000;
 			}
-
-		for (int i = 0; i < word.length(); i++){
-			wordScore += SCRABBLE_LETTER_VALUES[(int) (word.charAt(i)) - 97];
-		}
 		return wordScore;
 	}
 
